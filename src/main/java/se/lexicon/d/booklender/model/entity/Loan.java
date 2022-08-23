@@ -2,6 +2,7 @@ package se.lexicon.d.booklender.model.entity;
 
 import lombok.*;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
@@ -13,11 +14,17 @@ import java.util.Calendar;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
+@Entity
 public class Loan {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long loanId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "loanTaker")
     private LibraryUser loanTaker;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "book")
     private Book book;
     private LocalDate loanDate;
     private boolean concluded;

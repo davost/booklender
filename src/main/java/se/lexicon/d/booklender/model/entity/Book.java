@@ -1,12 +1,12 @@
 package se.lexicon.d.booklender.model.entity;
 
 import lombok.*;
+import org.hibernate.mapping.PrimaryKey;
+import org.springframework.context.annotation.Primary;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
@@ -16,10 +16,12 @@ import java.math.BigDecimal;
 @ToString
 
 //todo: add entity annotation
+@Entity
 public class Book {
 //todo: compare the fields with the workshop instruction
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookId;
     private String title;
     private boolean available;
