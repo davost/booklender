@@ -17,10 +17,7 @@ public class BooklenderApplication {
 
 	public void setLibraryUser(LibraryUser libraryUser) {
 		this.libraryUser = libraryUser;
-		/*libraryUser.setUserId(1);
-		libraryUser.setName("david");
-		libraryUser.setEmail("dd@dd.se");
-		libraryUser.getName();*/
+
 	}
 
 

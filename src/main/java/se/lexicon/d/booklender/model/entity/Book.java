@@ -14,11 +14,8 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-
-//todo: add entity annotation
 @Entity
 public class Book {
-//todo: compare the fields with the workshop instruction
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

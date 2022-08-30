@@ -6,7 +6,6 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Calendar;
 
 @Getter
 @Setter
@@ -61,7 +60,6 @@ public class Loan {
         return new BigDecimal(fine);
     }
 
-    /*public boolean extendLoan(days) {return false;}*/
 
 
 }
