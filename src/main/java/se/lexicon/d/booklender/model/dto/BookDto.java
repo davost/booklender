@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Data // seter,t getter required constructor + equal and hashcode
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookDto {
