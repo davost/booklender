@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import se.lexicon.d.booklender.model.dto.BookDto;
 import se.lexicon.d.booklender.model.entity.Book;
 import se.lexicon.d.booklender.repository.BookRepository;
-
 import java.util.List;
 
 @Service

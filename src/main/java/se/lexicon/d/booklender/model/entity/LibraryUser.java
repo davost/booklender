@@ -1,7 +1,6 @@
 package se.lexicon.d.booklender.model.entity;
 
 import lombok.*;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;

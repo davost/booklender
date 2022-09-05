@@ -1,12 +1,9 @@
 package se.lexicon.d.booklender.model.entity;
 
 import lombok.*;
-import org.hibernate.mapping.PrimaryKey;
-import org.springframework.context.annotation.Primary;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.List;
+
 
 @Getter
 @Setter

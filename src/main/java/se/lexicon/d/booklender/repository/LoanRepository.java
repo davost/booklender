@@ -2,12 +2,9 @@ package se.lexicon.d.booklender.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import se.lexicon.d.booklender.model.entity.Book;
-import se.lexicon.d.booklender.model.entity.LibraryUser;
 import se.lexicon.d.booklender.model.entity.Loan;
-
 import java.util.List;
-import java.util.Optional;
+
 @Repository
 public interface LoanRepository extends CrudRepository<Loan, Integer> {
 

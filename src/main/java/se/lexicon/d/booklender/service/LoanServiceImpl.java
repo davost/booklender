@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.lexicon.d.booklender.exception.ObjectNotFoundException;
 import se.lexicon.d.booklender.model.dto.LoanDto;
-import se.lexicon.d.booklender.model.entity.LibraryUser;
 import se.lexicon.d.booklender.model.entity.Loan;
 import se.lexicon.d.booklender.repository.BookRepository;
 import se.lexicon.d.booklender.repository.LibraryUserRepository;

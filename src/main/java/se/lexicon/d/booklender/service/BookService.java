@@ -3,7 +3,6 @@ package se.lexicon.d.booklender.service;
 
 import se.lexicon.d.booklender.exception.ObjectNotFoundException;
 import se.lexicon.d.booklender.model.dto.BookDto;
-
 import java.util.List;
 
 public interface BookService {
