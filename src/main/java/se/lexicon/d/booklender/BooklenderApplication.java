@@ -12,12 +12,6 @@ public class BooklenderApplication {
 		SpringApplication.run(BooklenderApplication.class, args);
 	}
 
-	public LibraryUser libraryUser = new LibraryUser();
-
-	public void setLibraryUser(LibraryUser libraryUser) {
-		this.libraryUser = libraryUser;
-
-	}
 
 
 

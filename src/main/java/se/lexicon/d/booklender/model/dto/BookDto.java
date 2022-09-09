@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class BookDto {
 
-    private int bookId;
+    private Integer bookId;
     private String title;
     private boolean available;
     private boolean reserved;
