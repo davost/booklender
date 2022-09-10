@@ -56,12 +56,65 @@ public class BookController {
 
      //public ResponseEntity<List<BookDto>> findAllParams(@RequestBody BookDto bookDto, @RequestParam (String, boolean "available", "reserved", "all"))
 
-    @GetMapping("/search")
-    public ResponseEntity<List<BookDto>> findByParams() {
+    /*@GetMapping("/search")
+    public ResponseEntity<?> findByParams() {
         // todo> implement id late through the request param
+        @RequestParam final String title,
+        @RequestParam final boolean available,
+        @RequestParam final boolean reserved,
+        @RequestParam(defaultValue = ALL) final List<BookDto> search
+      switch  {
+            case title:
+                return ResponseEntity.ok(bookService.findByTitle(title));
+            case available:
+                return ResponseEntity.ok(bookService.findByAvailable((available)));
+            case reserved:
+                return ResponseEntity.ok((bookService.findByReserved(reserved)));
+            default:
+                return ResponseEntity.badRequest().body(("Not a valid type"));
+        }
+
         return null;
 
+    }*/
+    //todo:
+    /*@GetMapping("/search")
+    public ResponseEntity<?> findByParams() {
+        //todo: implement id late through the request param
+        @RequestParam(name = "type", defaultValue = ALL) final String type,
+        @RequestParam(name = "value", defaultValue = ALL) final String value)
+        switch (type.toLowerCase().trim()) {
+            case TITLE:
+                return ResponseEntity.ok(bookService.findByTitle(title));
+            case AVAILABLE:
+                return ResponseEntity.ok(bookService.findByAvailable((available)));
+            case RESERVED:
+                return ResponseEntity.ok((bookService.findByReserved(reserved)));
+            case ALL:
+                return ResponseEntity.ok(bookService.findAll());
+            default:
+                return ResponseEntity.badRequest().body(("Not a valid type:" + type));
+        }
 
-    }
+        return null;*/
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

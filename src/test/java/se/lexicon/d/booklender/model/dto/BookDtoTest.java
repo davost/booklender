@@ -19,5 +19,10 @@ public class BookDtoTest {
     @Test
     public void test_object_ceated_true() {
         Assertions.assertEquals("Happy Programming", testObject.getTitle());
+        Assertions.assertEquals(1, testObject.getBookId());
+        Assertions.assertEquals("Programming", testObject.getDescription());
+        Assertions.assertEquals(true, testObject.isAvailable());
+        Assertions.assertEquals(false, testObject.isReserved());
+        Assertions.assertEquals(5, testObject.getMaxLoanDays());
     }
 }
